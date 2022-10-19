@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void print _alphabet (void);
+void print _alphabet(void);
 void print_alphabet_x10(void);
 int _is lower(int c);
 int _isalpha(int c);
@@ -12,6 +12,6 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
-int _pucc\har(char.c);
+int _putchar(char c);
 
 #endif
