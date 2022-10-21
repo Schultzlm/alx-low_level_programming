@@ -6,26 +6,29 @@
  *
  * Return: none
  */
-void print_triangle(int n)
+void print_triangle(int size)
 {
-	int h; tri;
+	int x, y, z;
 
-	if (n > 0)
+	if (size <= 0)
 	{
-		for (h = 1; h <= n; h++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (x = 0; x < size; x++)
 		{
-			for (tri = n - h; tri > 0; tri++)
-				_putchar(' ');
+			for (y = size - x; y > 1; y--)
+			{
+				_putchar(32);
+			}
 
-			for (tri = 0; tri < h; tri++)
-				_putchar('#');
-
-			if (h == n)
-				continue;
+			for (z = 0; z <= x; z++)
+			{
+				_putchar(35);
+			}
 
 			_putchar('\n');
 		}
 	}
-
-	_putchar('\n');
 }
