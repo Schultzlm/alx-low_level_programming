@@ -5,7 +5,7 @@
  * @a: takes in an integer
  * @b: takes in an integer
  *
- * Reurn a + b result
+ * Return: a + b result
  */
 int add(int a, int b)
 {
