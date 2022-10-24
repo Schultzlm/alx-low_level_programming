@@ -1,1 +1,1 @@
-pointers_arrays_strings
+Pointers, arrays and strings projects
