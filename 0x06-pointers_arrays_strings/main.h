@@ -15,5 +15,6 @@ void print_number(int n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
 char transform_2(char x);
+int _strlen(char *s);
 
 #endif
