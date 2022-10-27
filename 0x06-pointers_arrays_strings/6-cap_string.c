@@ -7,7 +7,7 @@
  */
 char *cap_string(char *str)
 {
-	init i = 0;
+	int i = 0;
 
 	while (str[i])
 	{
@@ -29,6 +29,7 @@ char *cap_string(char *str)
 		str[i - 1] == '}' ||
 		i == 0)
 		str[i] -= 32;
+
 		i++;
 	}
 
