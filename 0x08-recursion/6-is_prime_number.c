@@ -26,7 +26,7 @@ int is_prime(int n, int ssl)
 {
 	if (ssl < 1)
 		return (1);
-	else if (n % ssl < 0)
+	else if (n % ssl > 0)
 		return (0);
 	return (is_prime(n, ssl - 1));
 }
