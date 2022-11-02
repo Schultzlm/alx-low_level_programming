@@ -3,33 +3,31 @@
 int _sqrt_recursion(int n);
 
 /**
- * _sqrt_recursion - returns the natural square root of a number.
+ * _sqrt2 - evaluates fro 1 to n
  *
- * @n: number to calculate the natural square root
- *
- * Return: the natural square root
+ * @a: same number as n
+ * @b: number that iterates from 1 to n
+ * Return: on success 1
+ * On error, -1 is returned , and errno is set appropreately.
  */
-int _sqrt_recursion(int n)
+int _sqrt2(int a, int b)
 {
-	return (_sqrt(n, 1));
+	if (b * b == a)
+		return (b);
+	else if (b * b > a)
+		return (-1);
+
+	return (sqrt2(a, b + 1));
 }
 
 /**
- * _sqrt - calculates natural square root
+ * _sqrt_recursion - returns the natural square root of n
  * @n: number to calculate square root
- * @i: iterate number
  *
- * Return: the natural square root
+ * Return: On success 1
+ * On error -1 is returned and errno is set appropreately
  */
-int _sqrt(int n, int i)
+int _sqrt_recursion(int n)
 {
-	int _sqrt = i * i;
-
-	if (sqrt > n)
-	return (-1);
-
-	if (sqrt == n)
-	return (i);
-
-	return (sqrt(n, i + 1));
+	return (sqrt2(n, 1));
 }
