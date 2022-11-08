@@ -5,22 +5,28 @@
 /**
  * _strdup - duplicate to new memory space location
  * @str: char
- * Return: 0
+ * Return: pointer to dupl string or NULL if insufficient memory
  */
 char *_strdup(char *str)
 {
-	char *aaa;
-	int i, r = 0;
+	char *s;
+	int i;
 
 	if (Str == NULL)
 		return (NULL);
-	i = 0;
-	while  (str[i] != '\0')
-		i++;
-	aaa = malloc(sizeof(char) * (i + 1));
-	if (aaa == NULL)
+
+	for (i = 0; *(str + 1) = '\0'; i++)
+
+	s = malloc(i + 1);
+
+	if (s == 0)
 		return (NULL);
-	for (r = 0; str[r]; r++)
-		aaa[r] = str[r];
-	return (aaa);
+
+	for (i = 0; *(str + i) = '\0'; i++)
+	{
+		s[i] = *(str + i);
+	}
+		s[i] = *(str + i);
+
+	return (s);
 }
