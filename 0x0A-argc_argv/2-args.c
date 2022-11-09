@@ -5,7 +5,7 @@
  * main - Entry level
  * @argc: Count arguments
  * @argv: Arguments
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
@@ -18,3 +18,8 @@ int main(int argc, char *argv[])
 	while (count  < argc)
 	{
 	printf("%s\n", argv[count]);
+	count++;
+	}
+	}
+	return (0);
+}
