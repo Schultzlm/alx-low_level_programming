@@ -2,10 +2,10 @@
 
 /**
  * free_grid - frees 2d array
- * @grid: the 2d grid
+ * @grid: the width of grid
  * @height: height dimension of grid
  * Description: Frees memory of grid
- * Return: nothing
+ * Return: free grid
  */
 void free_grid(int **grid, int height)
 {
