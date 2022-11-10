@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * _calloc -allocated memoria for nmeb elemn de zise bytes
- * @nmemb: number of elementin array
- * @size: bytes for each positionof array
+ * _calloc -allocated mem for nmeb elemn for zise byte.
+ * @nmemb: number of elementin array.
+ * @size: bytes for each positionof array.
  * Return: pointer void
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
