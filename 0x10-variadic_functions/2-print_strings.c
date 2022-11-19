@@ -21,15 +21,30 @@ void print_strings(const char *separator, const unsigned int n, ...);
 	{
 		str = va_arg(valist, char *);
 
-		if (str)
-			printf("%s", str);
-		else
-			printf("(nil)");
-		if (i < n - 1)
-			if (separator)
-				printf("%s", separator);
+		if (str != NULL)
+		{
+			if (i == (n - 1))
+			{
+				printf("%s", str);
+				break;
+			}
+			if (separator == NULL)
+				printf("%s", str);
+			else
+				printf("%s%s", str, separator);
+		}
+		else if (str == NULL)
+		{
+			if (i == (n - 1))
+			{
+				printf("(nil)");
+				break;
+			}
+			if (separator  == NULL)
+				printf("(nil)");
+			else
+				printf("(nil)%s", separator);
+		}
 	}
-
-	printf("\n");
-	va_end(valist);
+	va_end(args);
 }
