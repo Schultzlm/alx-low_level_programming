@@ -33,17 +33,17 @@ void print_all(const char * const format, ...)
 		case 'c':
 			printf("%c", va_arg(valist, int)), c = 1;
 			break;
-		case "i":
+		case 'i':
 			printf("%d", va_args(valist, int)), c = 1;
 			break;
-		case "f":
+		case 'f':
 			printf("%f", va_args(valist, double)), c = 1;
 			break;
-		case "s":
+		case 's':
 			str = va_arg(valist, char *), c = 1;
 			if (!str)
 			{
-				printf("(ni)");
+				printf("(nil)");
 				break;
 			}
 			printf("%s", str);
