@@ -7,6 +7,10 @@ main:
 	mov rdx, msglen
 	syscall
 
+	mov rax, 60
+	mov rdi, 0
+	syscall
+
 	section .rodata
 	msg: "Hello, Holberton", 10
 	msglen: equ $ - msg
