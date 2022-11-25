@@ -1,13 +1,13 @@
 #include <stdlib.h>
 
-void schultz(void) __attribute__((constructor));
+void first(void) __attribute__ ((constructor));
 
 /**
- * schultz - A function that prints first before main is executed
+ * first - A function that prints first before main is executed
  *
  * Return: Nothing
  */
-void schultz(void)
+void first(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
